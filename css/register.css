@@ -1,0 +1,102 @@
+.container {
+    background-image: -webkit-linear-gradient(
+        136deg,
+        rgb(224, 195, 252) 0%,
+        rgb(142, 197, 252) 100%
+    );
+    padding: 100px 0;
+}
+
+.wrapper {
+    margin: 0 auto;
+    max-width: 800px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.image-wrapper {
+    background-image: url(../img/img-form.jpg);
+    width: 400px;
+    min-height: 600px;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+}
+
+.information {
+    position: absolute;
+    bottom: 25%;
+    left: 10%;
+    color: #fff;
+    margin: 0 auto;
+}
+
+.information h1 {
+    font-size: 3rem;
+    margin-bottom: 12px;
+}
+
+.information strong {
+    font-size: 2rem;
+}
+
+.price {
+    position: absolute;
+    bottom: 5%;
+    right: 10%;
+    color: #fff;
+    font-size: 2rem;
+}
+
+.form-wrapper {
+    width: 400px;
+    padding: 20px 30px;
+    background: #fff;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-title {
+    font-size: 3rem;
+    font-weight: 700;
+}
+
+.form-group {
+    margin: 20px 0;
+    font-size: 1.6rem;
+    width: 100%;
+}
+
+.form-group input:not(input[type="checkbox"]) {
+    display: block;
+    margin-top: 10px;
+    width: 100%;
+    border: none;
+    outline: 1px solid #e5e5e5;
+    border-radius: 5px;
+    padding: 16px 24px;
+}
+
+.form-group input:not(input[type="checkbox"]):focus {
+    outline: 1px solid #53c83c;
+}
+
+.form-group input[type="checkbox"] {
+    accent-color: #53c83c;
+}
+
+.form button {
+    background: #3b63ca;
+    padding: 20px 48px;
+    color: #fff;
+    font-weight: 600;
+    font-size: 1.6rem;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
