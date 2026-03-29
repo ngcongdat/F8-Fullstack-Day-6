@@ -1,0 +1,151 @@
+/* ======== PRICE TABLE CSS ======== */
+.container {
+    min-height: 100vh;
+    background: #fff;
+    background: linear-gradient(
+        90deg,
+        rgba(255, 255, 255, 0.44) 0%,
+        rgba(242, 242, 242, 0.55) 100%
+    );
+    padding: 50px 0;
+}
+
+.plan-page-header {
+    text-align: center;
+    margin-bottom: 100px;
+}
+
+.plan-page-header h1 {
+    font-size: 4rem;
+    margin-bottom: 10px;
+}
+
+.plan-container {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.price-wrapper {
+    padding: 30px 15px;
+    border-radius: 10px;
+    background: #eee;
+    flex-basis: 30rem;
+    transition: 0.3s;
+}
+
+.price-wrapper:hover {
+    box-shadow:
+        rgba(76, 156, 99, 0.4) 0px 2px 4px,
+        rgba(76, 156, 99, 0.3) 0px 7px 13px -3px,
+        rgba(76, 156, 99, 0.2) 0px -3px 0px inset;
+    transform: translateY(-15px);
+}
+
+.price-wrapper:nth-child(2) {
+    background: #fff;
+    border: 2px solid #4c9c63;
+    box-shadow:
+        rgba(76, 156, 99, 0.25) 0px 54px 55px,
+        rgba(76, 156, 99, 0.12) 0px -12px 30px,
+        rgba(76, 156, 99, 0.12) 0px 4px 6px,
+        rgba(76, 156, 99, 0.17) 0px 12px 13px,
+        rgba(76, 156, 99, 0.09) 0px -3px 5px;
+}
+
+.price-wrapper:nth-child(2):hover {
+    box-shadow:
+        rgba(76, 156, 99, 0.4) 0px 2px 4px,
+        rgba(76, 156, 99, 0.3) 0px 7px 13px -3px,
+        rgba(76, 156, 99, 0.2) 0px -3px 0px inset;
+}
+
+.plan-title {
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+.plan-header p {
+    margin: 10px 0 20px;
+    font-size: 1rem;
+    color: #888;
+}
+
+.plan-price {
+    display: flex;
+    align-items: flex-end;
+    gap: 10px;
+}
+
+.price {
+    font-size: 1.8rem;
+    font-weight: 600;
+}
+
+.pricing p {
+    color: #ccc;
+    font-size: 0.9rem;
+    margin-top: 4px;
+}
+
+.sale-off-price {
+    font-size: 1.5rem;
+    color: #ccc;
+    text-decoration: line-through;
+    font-weight: 100;
+}
+
+.price::before {
+    content: "$";
+    font-size: 1rem;
+}
+
+.sale-off-price:not(:empty):before {
+    content: "$";
+    font-size: 0.8rem;
+    display: inline-block;
+}
+
+.plan-btn {
+    display: block;
+    margin: 20px auto;
+    padding: 6px 0;
+    width: 100%;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    font-weight: 600;
+}
+
+.active-plan {
+    background: #ddd;
+    color: #666;
+    cursor: default;
+}
+
+.choose-plan {
+    background: #4c9c63;
+    color: #fff;
+    transition: 0.5s;
+}
+
+.choose-plan:hover {
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.detail {
+    margin: 10px 0;
+}
+
+.detail::before {
+    content: "✓";
+    display: inline-block;
+    margin-right: 10px;
+    color: #fff;
+    font-weight: 900;
+    width: 20px;
+    height: 20px;
+    background: #4c9c63;
+    text-align: center;
+    line-height: 20px;
+    border-radius: 50%;
+}
