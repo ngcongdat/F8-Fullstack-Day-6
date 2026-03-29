@@ -1,0 +1,142 @@
+.container {
+    padding: 100px 0;
+}
+
+.wrapper {
+    margin: 0 auto;
+    max-width: 1170px;
+}
+
+.products {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px;
+}
+
+.product {
+    flex-grow: 1;
+    max-width: 30%;
+    background: #eee;
+    border-radius: 20px;
+    box-shadow:
+        rgba(0, 0, 0, 0.1) 0px 20px 25px -5px,
+        rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
+    transition: 0.3s;
+}
+
+.prod-thumb-wrapper {
+    position: relative;
+}
+
+.prod-thumb {
+    width: 100%;
+    border-radius: 20px 20px 0 0;
+}
+
+.add-to-wish {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: none;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.add-to-wish i {
+    font-size: 2rem;
+    transition: 0.3s;
+}
+
+.add-to-wish:hover {
+    background: rgb(255, 67, 67);
+    transform: scale(125%);
+}
+
+.add-to-wish:hover i {
+    color: #fff;
+    transform: scale(125%);
+}
+.prod-featured-wrapper {
+    padding: 20px 12px;
+}
+
+.prod-title {
+    font-size: 2rem;
+    margin-bottom: 8px;
+}
+
+.prod-title a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 700;
+    display: block;
+}
+
+.prod-desc {
+    font-size: 1.2rem;
+    line-height: 1.4;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    line-clamp: 2;
+    -webkit-line-clamp: 2;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.prod-price {
+    margin: 10px 0 20px;
+}
+
+.price {
+    font-size: 1.8rem;
+}
+
+.price::before {
+    content: "$";
+    font-size: 1.2rem;
+}
+
+.sale-off-price {
+    font-size: 1.2rem;
+    text-decoration: line-through;
+    color: #999;
+}
+
+.sale-off-price::before {
+    content: "$";
+    font-size: 0.8rem;
+    display: inline-block;
+}
+
+.action-btn {
+    display: flex;
+    gap: 8px;
+}
+
+.action-btn button {
+    width: 50%;
+    border: none;
+    border-radius: 5px;
+    padding: 8px;
+    cursor: pointer;
+    color: #fff;
+    font-weight: 600;
+    transition: 0.5s;
+}
+
+.action-btn button:hover {
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    transform: translateY(-5px);
+}
+
+.add-to-cart {
+    background: #0443e8;
+}
+
+.buy-now {
+    background: #b82a2a;
+}
